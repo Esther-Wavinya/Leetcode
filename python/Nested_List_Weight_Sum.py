@@ -53,11 +53,9 @@
 #        :rtype List[NestedInteger]
 #        """
 
-nestedList = [1, [4, [6]]]
-
 
 class Solution:
-    def depthSum(self, nestedList: list[NestedInteger]) -> int:
+    def depthSum(self, nestedList: List[NestedInteger]) -> int:
         # DFS recursively - nestedList = [1,[4,[6]]]
         # at the beginning initialize the total is zero, and start processing every single item in the nestedList and the first one is 1 and assign depth as 1 and after that I will check if this is an integer. If this is an integer I will just calculate the number by mulplying 1 by 1 and add it to the total. For the next layer I am going to check if this item is a list. If this is a list, I am going to recursively run Depth First Serch(DFS) on the list. So the total in this case should be after I get the list and run the DFS on the list but the depth should be plus 1 because everything in this list compared to 4 and 6, atleast should have a depth of 2 beginning from 4 so then when I run the depth search I want to make sure the depth needs to add one and then after adding everything together and recursively, I want to return the total number.
 
