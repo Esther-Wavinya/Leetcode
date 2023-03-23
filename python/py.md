@@ -14,3 +14,15 @@ Always ask the following questions related to input for every coding problem:
 
 ## Type and classification of data structures
 ![ds!](images/ds.png)
+
+## Recurrence relation of some popular recursive algorithms
+![recursive algorithms!](images/recurrence-relation-of-recursive-algorithms.png)
+
+## Difference between Recursion and Iteration in DSA
+### In terms of thought process
+- Recursion is often more natural for algorithmms such as binary search, merge sort, quick sort, DFS traversal of a graph, etc. Similarly, approaches like backtracking and data structures like trees are often easier to understand using recursion.
+
+- On the other hand, many coding problems are more straightforward to solve using iteration. Recursive solutions may be challenging or impossible to understand in these cases. For example, insertion sort, heap sort and BFS traversal of a graph or tree are often more efficiently implemented using iteration.
+
+![approaches!](images/app.png)
+
