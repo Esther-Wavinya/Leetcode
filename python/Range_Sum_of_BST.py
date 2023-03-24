@@ -84,8 +84,6 @@ class Solution(object):
 
         self.dfs(root, low, high)
 
-        return self.range_sum
-
     def dfs(self, node, low, high):
         if node:
             if low <= node.val <= high:
@@ -97,6 +95,6 @@ class Solution(object):
             if node.val < high:
                 self.dfs(node, right, low, high)
 
-
+        return self.range_sum
 # T: O(N)
 # S: O(N)
