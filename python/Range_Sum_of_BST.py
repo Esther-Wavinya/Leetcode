@@ -41,14 +41,14 @@ class Solution(object):
             return 0
             # define variable to store our result
         ans = 0
-        # since we are solving iteratively, stack to store our recursion
+        # since we are solving iteratively, declare variable stack to store our recursion
         stack = [root]
 
         while stack:
             node = stack.pop()  # current stack we are working with
             # check whether in the node what we have is in the range that we need to sum up
             if node:  # we may not have node or node can be null so we need to make sure it is non-null
-                if low <= node.val <= high:
+                if low <= node.val <= high:  # if node value lies within the range
                     # add that node value to our ans
                     ans += node.val
                 # need to check whether we need to go through the left subtree. From the diagram if our value - node.val is greater than low then that means we are allowed to go into the left subtree. If is less than or small already, there is no point of checking the left subtree because the property of a binary search tree is all values in the left child are going to be less than the current parent node's value
