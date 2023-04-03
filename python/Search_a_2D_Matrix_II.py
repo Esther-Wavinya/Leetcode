@@ -22,7 +22,6 @@
 
 
 # One approach to solve this problem is to start from the top-right corner of the matrix and compare the value at that position with the target. If the value is greater than the target, we move one column to the left. If the value is smaller than the target, we move one row down. We repeat this process until we either find the target or reach the end of the matrix.
-
 # The reason why we start from the top-right corner is that this position allows us to eliminate one row or one column at each step, making the search more efficient.
 
 class Solution:
