@@ -32,14 +32,18 @@ from collections import deque
 
 class Solution:
     def levelOrder(self, root: Optional[TreeNode]) -> List[List[int]]:
+        # check if the root node exists, if it does not exist, we return an empty list since there are no nodes to process
         if not root:
             return []
-
+        # create a deque object called 'queue' and add the root node to it
         queue = deque([root])
+        # create an empty list called 'result' that we will use to store the nodes' values
         result = []
-
+        # loop through the queue, popping out each node one by one using 'queue.popleft()'
         while queue:
+            # get the number of nodes in the current level using 'level_size = len(queue)'
             level_size = len(queue)
+            # create an empty list called 'level_nodes' to store the nodes at the current
             level_nodes = []
 
             for i in range(level_size):
