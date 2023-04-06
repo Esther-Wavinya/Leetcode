@@ -23,7 +23,7 @@
 #     s consists of digits only.
 
 
-# To solve this problem, we canuse a recursive approach. We can start by placing a dot after the first integer,then after the second integer and so on until we have placed three dots. At each step, we check if the current substring forms a valid integer between 0 and 255. If it does, we continue with the next step, otherwise we backtrack
+# To solve this problem, we can use a recursive approach. We can start by placing a dot after the first integer,then after the second integer and so on until we have placed three dots. At each step, we check if the current substring forms a valid integer between 0 and 255. If it does, we continue with the next step, otherwise we backtrack
 # We can keep track of the current IP address being formed and the number of dots placed so far. If we have three dots and the remaining substring forms a valid integer, we add the current IP address to the list of valid IP addresses
 class Solution:
     def restoreIpAddresses(self, s: str) -> List[str]:
